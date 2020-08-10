@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".FrameLayout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FRAME LAYOUT"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:layout_width="198dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:scaleType="centerCrop"
+            android:src="@drawable/crowd"
+            android:translationX="-20dp"/>
+
+        <FrameLayout
+            android:layout_width="210dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right">
+
+            <ImageView
+                android:layout_width="103dp"
+                android:layout_height="148dp"
+                android:layout_gravity="left"
+                android:scaleType="centerCrop"
+                android:src="@drawable/crowd" />
+
+            <ImageView
+                android:layout_width="103dp"
+                android:layout_height="148dp"
+                android:layout_gravity="right"
+                android:scaleType="centerCrop"
+                android:src="@drawable/crowd" />
+
+            <ImageView
+                android:layout_width="206dp"
+                android:layout_height="148dp"
+                android:layout_gravity="bottom"
+                android:scaleType="centerCrop"
+                android:src="@drawable/crowd" />
+
+        </FrameLayout>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Layout"
+        android:layout_marginTop="350dp"
+        android:layout_gravity="center_horizontal"/>
+
+</FrameLayout>
