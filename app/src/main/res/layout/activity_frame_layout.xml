@@ -27,7 +27,7 @@
             android:layout_gravity="left"
             android:scaleType="centerCrop"
             android:src="@drawable/crowd"
-            android:translationX="-20dp"/>
+            android:translationX="-2dp"/>
 
         <FrameLayout
             android:layout_width="210dp"
